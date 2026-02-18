@@ -1,5 +1,5 @@
 
-# 🐾 Pet Adoption System - Backend
+#  Pet Adoption System - Backend
 
 This is the server-side application for the Pet Adoption System, built with **Node.js**, **Express**, and **MongoDB**. It handles user authentication, pet management, and a complete adoption workflow with role-based access control.
 
@@ -46,7 +46,7 @@ This is the server-side application for the Pet Adoption System, built with **No
 
 1. **Clone the repository:**
 ```bash
-git clone <your-repo-url>
+git clone <https://github.com/in-abhishek/pet-backend.git>
 cd backend
 
 ```
@@ -65,8 +65,8 @@ Create a `.env` file in the root folder:
 PORT=5002
 MONGODB_URI=your_mongodb_connection_string
 FRONTEND_BASE_URL=http://localhost:5173
-ACCESS_TOKEN_SECRET=your_access_token_secret
-REFRESH_TOKEN_SECRET=your_refresh_token_secret
+ACCESS_TOKEN_SECRET=access_token_secret
+REFRESH_TOKEN_SECRET=refresh_token_secret
 
 ```
 
@@ -95,7 +95,7 @@ npm start
 | POST | `/api/refresh-token` | Public | Get new access token via refresh token |
 | POST | `/api/logout` | Public | Clear session cookies |
 
-### 🐕 Pet Management
+###  Pet Management
 
 | Method | Endpoint | Access | Description |
 | --- | --- | --- | --- |
@@ -105,7 +105,7 @@ npm start
 | PUT | `/api/update-pet/:id` | Admin | Update pet details |
 | DELETE | `/api/pets/:id` | Admin | Remove a pet from listing |
 
-### 📝 Adoptions
+###  Adoptions
 
 | Method | Endpoint | Access | Description |
 | --- | --- | --- | --- |
@@ -116,7 +116,7 @@ npm start
 
 ---
 
-## 🛡️ Security Features
+##  Security Features
 
 * **Bcrypt:** Passwords are never stored in plain text; they are hashed before saving.
 * **JWT Protection:** Routes are protected by custom middleware that verifies the token's validity and user's role.
